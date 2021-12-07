@@ -12,7 +12,7 @@ refs.startBtn.addEventListener('click', onStartClick);
 refs.stopBtn.addEventListener('click', onStopClick);
 
 function onStartClick() {
-    refs.startBtn.disabled = false;
+    refs.startBtn.disabled = true;
   refs.stopBtn.disabled = false;
     timerId = setInterval(() => { refs.body.style.backgroundColor = getRandomHexColor();
 }, 1000);
